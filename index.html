@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sıla'nın Komik Dünyası 🎪</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="rainbow-header">
+            <h1>🎀 Sıla GÖKTAŞ'ın <span class="mini-text">(Boyu Mini)</span> DEV DÜNYASI! 🚀</h1>
+            <button onclick="playSound('laugh')">Sıla Kahkası 🎤</button>
+        </header>
+
+        <!-- Şakalar Bölümü -->
+        <div class="joke-box">
+            <h2>📌 Sıla Şakaları:</h2>
+            <div id="jokes-container"></div>
+        </div>
+
+        <!-- Balon Oyunu -->
+        <div class="game-box">
+            <h2>🎈 Sıla Balonlarını Patlat!</h2>
+            <div class="score-board">Puan: <span id="score">0</span></div>
+            <div id="balloon-field"></div>
+        </div>
+
+        <!-- Göktaş Oyunu -->
+        <div class="game-box">
+            <h2>🌠 Göktaş Yağmuru!</h2>
+            <div id="stone-counter">Yakalanan Taş: 0</div>
+            <div id="stone-field"></div>
+        </div>
+
+        <!-- Sesler -->
+        <audio id="europapa" src="joost-europapa.mp3"></audio>
+        <audio id="pop-sound" src="pop.mp3"></audio>
+        <audio id="laugh-sound" src="laugh.mp3"></audio>
+    </div>
+</body>
+</html>
