@@ -1,0 +1,90 @@
+:root {
+    --sila-pink: #ff69b4;
+    --sila-yellow: #fff44f;
+    --goktas-gray: #2f4f4f;
+}
+
+body {
+    background: linear-gradient(45deg, #ffb6c1, #87cefa);
+    font-family: 'Comic Sans MS', cursive;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.rainbow-header {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.mini-text {
+    font-size: 0.6em;
+    color: var(--goktas-gray);
+    vertical-align: middle;
+}
+
+.joke-box {
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.sila-joke {
+    padding: 15px;
+    margin: 10px;
+    background: var(--sila-yellow);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sila-joke:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.game-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* Balon Animasyonları */
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(10deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+.balloon {
+    display: inline-block;
+    font-size: 40px;
+    margin: 10px;
+    cursor: pointer;
+    animation: float 3s infinite;
+    transition: transform 0.2s;
+}
+
+.balloon:hover {
+    transform: scale(1.2);
+}
+
+/* Göktaş Animasyonu */
+@keyframes stone-fall {
+    from { top: -100px; }
+    to { top: 100vh; }
+}
+
+.stone {
+    position: fixed;
+    font-size: 25px;
+    cursor: pointer;
+    animation: stone-fall 5s linear;
+}
